@@ -1,0 +1,12 @@
+.container {
+    /* display: ; */
+    /* flex-direction: ; */
+    border: 1px solid black;
+}
+
+.item {
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+}
