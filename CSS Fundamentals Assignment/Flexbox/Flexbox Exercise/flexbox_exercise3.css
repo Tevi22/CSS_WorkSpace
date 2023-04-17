@@ -3,6 +3,8 @@
     border: 1px dashed black;
     /* align-items: ; */
     /* justify-content: ; */
+    align-items:flex-end;
+    justify-content: center;
 }
 
 .item {
