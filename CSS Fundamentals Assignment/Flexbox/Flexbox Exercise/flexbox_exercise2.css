@@ -1,7 +1,9 @@
 .container {
     /* display: ; */
     /* flex-direction: ; */
-    border: 1px solid black;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    border: 1px dotted black;
 }
 
 .item {
