@@ -1,0 +1,83 @@
+body{
+    background-color: darkgreen;
+    width: 1000px;
+    height: 500px;
+}
+.header {
+    background-color: darkgreen;
+    font-size: xx-large;
+    color: yellow;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgreen;
+    position: relative;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+
+img:hover{
+    box-shadow: 10px 10px 5px #000;
+    transform: scale(1.1);
+}
+
+
+
+.Book-trip{
+    border: 1px solid black;
+    background-image: linear-gradient(to right,darkgreen,lightgreen);
+    border-radius: 30px;
+    padding: 14px 40px;
+    position: relative;
+    left: 130px;
+    bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container1 {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+    height: 450px;
+    position: relative;
+    bottom:50px ;
+}
+
+.offer1 {
+    border-bottom: 1px solid black;
+    
+}
+
+.offer2 {
+    border-bottom: 1px solid black;
+}
+
+.flashy{
+    color: yellow;
+    border: 1px dotted darkgreen;
+    background-image: linear-gradient(outside, inside,darkgreen,lightgreen);
+    border-radius: 30px;
+    padding: 14px 40px;
+
+}
+
+.xl-button{
+
+}
+.footer {
+    color: yellow;
+    font-size: large;
+    text-align: center;
+}
