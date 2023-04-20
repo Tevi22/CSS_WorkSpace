@@ -15,23 +15,30 @@ body{
     justify-content: center;
     background-color: lightgreen;
     position: relative;
+    
 }
 
 img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 20px;
+    
+}
+
+.content1 {
+    width: 300;
 }
 
 img:hover{
-    box-shadow: 10px 10px 5px #000;
+    box-shadow: 10px 10px 5px gray;
     transform: scale(1.1);
+    
 }
 
 
 
 .Book-trip{
-    border: 1px solid black;
+    border: 2px solid black;
     background-image: linear-gradient(to right,darkgreen,lightgreen);
     border-radius: 30px;
     padding: 14px 40px;
@@ -41,7 +48,7 @@ img:hover{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none ;
     color: white;
 }
 
@@ -50,9 +57,10 @@ a{
     display: flex;
     flex-direction: column;
     border-left: 1px solid black;
-    height: 450px;
     position: relative;
     bottom:50px ;
+    left: 30px;
+    
 }
 
 .offer1 {
@@ -62,20 +70,67 @@ a{
 
 .offer2 {
     border-bottom: 1px solid black;
+    font-weight: bold;
+    
+}
+
+h4{
+    text-align: center;
 }
 
 .flashy{
     color: yellow;
-    border: 1px dotted darkgreen;
-    background-image: linear-gradient(outside, inside,darkgreen,lightgreen);
+    border: 3px dotted darkgreen;
+    background-image: linear-gradient(to right,darkgreen,lightgreen);
     border-radius: 30px;
     padding: 14px 40px;
+    animation: blink 1.5s infinite;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
 
 }
 
 .xl-button{
+    color: yellow;
+    background-image: linear-gradient(to right,darkgreen,lightgreen);
+    border-radius: 50%;
+    padding: 14px 4px;
+    animation: flashing 1.5s infinite;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 40px;
 
 }
+
+@keyframes blink{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.7;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+@keyframes flashing {
+    0% {
+        background-color: #2ba805;
+        box-shadow: 0 0 5px black;
+      }
+      50% {
+        background-color: #49e819;
+        box-shadow: 0 0 20px black;
+      }
+      100% {
+        background-color: #2ba805;
+        box-shadow: 0 0 5px black;
+    }
+}
+
 .footer {
     color: yellow;
     font-size: large;
