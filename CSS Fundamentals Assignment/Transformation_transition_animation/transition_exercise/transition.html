@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Transition - Exercise</title>
-        <style>
 
-        </style>
-    </head>
-    <body>
-        <div class="card">
-            <img>
-            <h2></h2>
-            <h4></h4>
+<head>
+    <title>Transition - Exercise</title>
+    <style>
+        body{
+            align-items: center;
+        }
+        .card {
+            background-color: black;
+            width: 300px;
+            height: 250px;
+            font-family: 'Courier New', Courier, monospace;
+            padding-bottom: 10px;
+        }
+
+        .card:hover{
+            height: 500px;
+            box-shadow: 10px 10px 10px 10px gray;
+            transition: all 5s ease 3 ;
+            transition-duration: 1s;
+        }
+
+        
+
+        img {
+            padding-left: 8px;
+            padding-top: 10px;
+        }
+
+        h2,
+        h4 {
+            color: white;
+            padding-left: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="display">
+            <img src="./images/oneplus.jpg">
+                <h2>OnePlus 8 Pro</h2>
         </div>
-    </body>
+        <div class="product info">
+            <h4>ROM: 256GB</h4>
+            <h4>RAM: 8GB</h4>
+            <h4>Camara: 48MP + 12MP + 12Mp</h4>
+            <h4>Version: Android 10</h4>
+            <h4>Battery: 4,500 mAh</h4>
+            <h4>Best Price: Rs.56,900</h4>
+        </div>
+    </div>
+</body>
+
 </html>
