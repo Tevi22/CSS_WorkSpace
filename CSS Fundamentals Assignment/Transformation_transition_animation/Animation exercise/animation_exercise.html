@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .card{
+                background-color: black;
+                width: 300px;
+                height: 200px;
+                animation: fadeInBottom 1s;
+            }
+
+            img{
+                padding-left: 8px;
+                padding-top: 8px;
+                filter: brightness(50%);
+            }
+
+            @keyframes fadeInBottom {
+                0% {
+                    opacity: 0;
+                    transform: translateY(100%);
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <img src="/CSS Fundamentals Assignment/Transformation_transition_animation/transition_exercise/images/oneplus.jpg">
+        </div>
+    </body>
+</html>
