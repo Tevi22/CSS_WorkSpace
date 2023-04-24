@@ -11,6 +11,12 @@
             font-family: 'Roboto', sans-serif;
             margin-top: 5%;
             margin-left: 200px;
+    
+        }
+
+        #heading,
+        #subtext {
+            animation: fadeIn ease 1s;
         }
 
         #heading {
@@ -24,11 +30,34 @@
             animation-delay: 0.2s;
         }
 
+
         #paragraph {
             font-style: italic;
             margin-right: 200px;
             font-size: 22px;
             text-align: center;
+            animation: fadeInBottom ease 1s;
+            
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                transform: translate3d(-50px, 0, 0);
+                transition: 0.25s all ease-in-out;
+                opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeInBottom {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 50px, 0);
+                transition: 0.25s all ease-in-out;}
+            to {
+                opacity: 1;
+                transform: translate3d(0,0,0);
+                }
         }
     </style>
 </head>
