@@ -1,0 +1,36 @@
+// Write the necessary styling in this file
+$fontBody : "Comic Sans MS",
+cursive,
+sans-serif;
+$display: none;
+
+body {
+    font-family: $fontBody;
+}
+
+.navbar {
+    background-color: rgb(241, 228, 228);
+    overflow: auto;
+
+    a {
+        float: left;
+        padding: 15px;
+        color: rgb(236, 5, 5);
+        text-decoration: $display;
+        font-size: 20px;
+    }
+
+    a:hover {
+        background-color: black;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        a {
+            float: $display;
+            display: block;
+        }
+    }
+}
