@@ -40,22 +40,44 @@ a {
 
 /* Cards CSS */
 .cards-list{
-    margin-top: 2rem ;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+
+.front-card{
+    position: absolute;
+    animation: fadeInBottom ease 1s
+    
+}
+
 .front-card, .back-card{
     border: 1px solid gray;
     border-radius: 2px;
-    padding: 15px;
+    padding: 10px;
     width: 300px;
     height: 250px;
     text-align: center;
     margin: 10px; 
-    transition: all 1s;   
+    transition: all 1s;  
 }
+
+.front-card:hover{
+    opacity: 0;
+    animation: fadeInRight ease 1s;
+}
+
+
+.back-card:hover{
+    animation: fadein ease 1s;
+}
+
+.back-card{
+    animation: fadeInBottom-backcard ease 1s
+}
+
 
 .front-card img{
     width: 300px;
@@ -73,6 +95,45 @@ a {
 }
 
 /* On load the card should slide upwards */
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+        transition: 0.25s all ease-in-out;}
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+        }
+}
+
+@keyframes fadeInBottom-backcard {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+        transition: 0.25s all ease-in-out;}
+    to {
+        opacity: 0;
+        transform: translate3d(0,0,0);
+        }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(0);
+        transition: 1s all ease-in-out;
+        opacity: 1;
+    }
+    to {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 /* The backcard should be behind the front card on load and should be invicible(set opacity=0 for back card) */
 
