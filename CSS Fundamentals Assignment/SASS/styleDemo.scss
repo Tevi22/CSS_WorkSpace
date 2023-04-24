@@ -1,0 +1,16 @@
+$variable1: red;
+$variable2: yellow;
+$variable3: blue;
+
+
+.header{
+  background-color: $variable1;
+}
+
+.body{
+  background-color: $variable2;
+}
+
+.footer{
+  background-color: $variable3;
+}
