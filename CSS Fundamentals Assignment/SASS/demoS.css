@@ -1,0 +1,25 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(241, 228, 228);
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  padding: 15px;
+  color: rgb(236, 5, 5);
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar a:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}/*# sourceMappingURL=demoS.css.map */
