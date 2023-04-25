@@ -1,5 +1,6 @@
 body {
     background-color: rgb(235, 206, 211);
+    text-align: center;
 }
 
 .content {
@@ -18,6 +19,11 @@ body {
 
 /* Code your card here  */
 .card {
+    background-color: #f1f1f1;
+    text-align: center;
+    transition: all 0.3s;
+    padding: 16px;
+    box-shadow: 10px 5px 5px gray ;
     /* Apply appropriate box shadow property */
     /* Provide padding of 16px;
     Background color needs to be '#f1f1f1'
@@ -28,21 +34,74 @@ body {
 
 
 /* Use suitable pseudo class to provide hover effect to the card */
-.card {
+.card:hover {
+    box-shadow: 10px 5px 5px rgb(68, 17, 34);
     /* Change the box shadow property to some suitable value when user hover the card */
 }
 
 /* Style the image according to give requirements */
 img {
+    width: 100%;
     /* Provide width of image to be 100% */
 }
 
 /* Style the h1 selector as per below mentioned requirements */
 h1 {
+    align-content: center;
     /* Align the content to center using suitable css property */
 }
 
+@media (max-width: 600px) {
+    body{
+        background-color: black;
+        text-align: center;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    h1,
+    p {
+        color: tan;
+    }
 
+    p{
+        font-size: 20px;
+    }
+
+    img{
+        width: auto;
+    }
+
+    .card{
+        width: fit-content;
+        box-shadow: none;
+    }
+
+    .card:hover{
+        box-shadow: none;
+    }
+
+    #alignDiv,
+    .content {
+        margin-left: 0;
+        padding-top: 30px;
+    }
+    
+    
+
+    
+}
+
+@media (min-width: 1020px) {
+
+    body{
+        background-color: pink;
+        text-align: center;
+    }
+    
+}
  /* Code the required media query here as per given requirements 
 1)Change margin-left to 0px in id alignDiv
 2)Change the appropriate font color & background color of card and body
