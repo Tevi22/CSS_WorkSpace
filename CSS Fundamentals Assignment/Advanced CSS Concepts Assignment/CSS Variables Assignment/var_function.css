@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* Create different classes and style them accordingly to achieve the below shown output */
+:root {
+  --box-shadow-purple: 10px 10px 120px 10px rgb(128, 43, 202);
+  --box-shadow-green: 10px 10px 120px 10px darkgreen;
+  --box-shadow-blue:10px 10px 120px 10px darkblue;
+  --border: 1px solid black;
+  --form-bg-blue: rgb(140, 140, 240);
+  --form-bg-green: rgb(148, 207, 148);
+  --form-bg-purple: rgb(233, 192, 233);
+}
+@keyframes buttonPurple {
+  0% {
+    background-color: blueviolet;
+  }
+  25% {
+    background-color: rgb(151, 75, 223);
+  }
+  75% {
+    background-color: rgb(162, 109, 211);
+  }
+  100% {
+    background-color: rgb(182, 153, 209);
+  }
+}
+@keyframes buttonGreen {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: rgb(30, 172, 30);
+  }
+  75% {
+    background-color: rgb(53, 161, 53);
+  }
+  100% {
+    background-color: rgb(95, 182, 95);
+  }
+}
+@keyframes buttonBlue {
+  0% {
+    background-color: blue;
+  }
+  25% {
+    background-color: rgb(43, 43, 245);
+  }
+  75% {
+    background-color: rgb(84, 84, 247);
+  }
+  100% {
+    background-color: rgb(125, 125, 243);
+  }
+}
+
+#purple:checked ~ .changeCol {
+  /* Apply colors related to Purple theme */
+  color: blueviolet;
+  --purple:var(--box-shadow-purple);
+  --bg-color:var(--form-bg-purple);
+  background-color: rgb(146, 146, 212);
+}
+#purple:checked ~ .changeCol form {
+  box-shadow: var(--purple);
+  border: var(--border);
+  background-color: var(--bg-color);
+}
+#purple:checked ~ .changeCol .header {
+  background-color: var(--bg-color);
+  filter: grayscale(60%);
+}
+#purple:checked ~ .changeCol button,
+#purple:checked ~ .changeCol a {
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  border-radius: 30%;
+  padding: 15px 20px;
+  animation: buttonPurple ease-in-out 1s infinite;
+}
+
+#green:checked ~ .changeCol {
+  /* Apply colors related to Green theme */
+  color: green;
+  --green: var(--box-shadow-green);
+  --bg-color:var(--form-bg-green);
+  background-color: rgb(4, 250, 4);
+}
+#green:checked ~ .changeCol form {
+  box-shadow: var(--green);
+  border: var(--border);
+  background-color: var(--bg-color);
+}
+#green:checked ~ .changeCol .header {
+  background-color: var(--bg-color);
+  filter: grayscale(60%);
+}
+#green:checked ~ .changeCol button,
+#green:checked ~ .changeCol a {
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  border-radius: 30%;
+  padding: 15px 20px;
+  animation: buttonGreen ease-in-out 1s infinite;
+}
+
+#blue:checked ~ .changeCol {
+  /* Apply colors related to Blue theme */
+  color: blue;
+  --blue: var(--box-shadow-blue);
+  --bg-color:var(--form-bg-blue);
+  background-color: rgb(92, 92, 231);
+}
+#blue:checked ~ .changeCol form {
+  box-shadow: var(--blue);
+  border: var(--border);
+  background-color: var(--bg-color);
+}
+#blue:checked ~ .changeCol .header {
+  background-color: var(--bg-color);
+  filter: grayscale(60%);
+}
+#blue:checked ~ .changeCol button,
+#blue:checked ~ .changeCol a {
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  border-radius: 30%;
+  padding: 15px 20px;
+  animation: buttonBlue ease-in-out 1s infinite;
+}
+
+.top-border {
+  background-color: black;
+  width: auto;
+  height: 30px;
+}
+
+section {
+  background-color: white;
+  font-family: "Ubuntu", sans-serif;
+  height: 80vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  width: auto;
+}
+
+.header {
+  display: block;
+  align-content: center;
+  text-align: center;
+  width: auto;
+  height: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 60px;
+  align-items: center;
+  box-shadow: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 38%;
+}
+
+.uname,
+.pass {
+  height: 30px;
+  width: 200px;
+  text-align: center;
+  border-radius: 30%;
+  border-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pass {
+  margin-top: 20px;
+}
+
+.pass:hover,
+.uname:hover {
+  border: 1px solid black;
+}
+
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.login {
+  font-weight: bold;
+}
+
+button {
+  opacity: 0;
+}
+
+footer {
+  height: 20px;
+  width: auto;
+  background-color: black;
+}/*# sourceMappingURL=var_function.css.map */
