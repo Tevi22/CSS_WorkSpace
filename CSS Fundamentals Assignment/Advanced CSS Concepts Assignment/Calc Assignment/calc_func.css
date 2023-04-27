@@ -1,6 +1,6 @@
 :root{
     --font-size: 25px;
-    --content-color: rgb(23, 23, 155);
+    --content-color: rgb(6, 6, 82);
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,16 +30,28 @@ body{
     align-items: center;
     width: 1000px;
     height: 250px;
-    margin-right: 20px;
-    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
     background: radial-gradient(blue,#0dba86);
 }
 
 .item{
     flex-wrap: wrap;
+    color: var(--content-color);
 }
 
 img{
     width: 200px;
     height: 200px;
+} 
+
+button {
+    margin-top: 20px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    float: right;
+    border-radius: 30%;
+    background: linear-gradient(to right,blue,#0dba86);
 }
+
