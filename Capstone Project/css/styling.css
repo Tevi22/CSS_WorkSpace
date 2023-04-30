@@ -1,13 +1,19 @@
 
 body{
 	/* Add image link for background image (bg.jpg)  */
+	background-image: url(../assets/bg.jpg) ;
 	/* Make the background no repeat */
+	background-repeat: no-repeat;
 	/* Make the background size as cover */
+	background-size: cover;
 	/* Provide width and height as 100% */
+	height: 100%;
 }
 
 #para{
 	/* Font size should be 20px */
+	font-size: 20px;
+	animation: auditionAnimation 4s linear infinite;
 	/* Add animation of name (auditionAnimation) with duration as 4s with linear timing function and infinite iteration count */
 }
 
@@ -18,30 +24,49 @@ body{
     66% - color - red
     100% - color - yellow 
 	*/
+	0% {color: white;}
+	33% {
+		color: lawngreen;
+		transform: scale(1.1);
+	}
+	66% {color: red;}
+	100%{color: yellow;}
 }
 
 img:hover{
+	transform: sacle(1.02);
 	/* It should transform of scale 1.02 */
+	box-shadow: 0px 0px 5px 5px white;
 	/* Provide box shadow as white with (0px 0px 5px 5px)*/
 }
 
 img{
+	height: 250px;
+	width: 300px;
 	/* Provide height and width as 250px and 300px respectively */
 }
 
 
 #paragraph{
+	font-style: italic;
+	font-weight: 500;
+	font-size: 20px;
 	/* Font style should be italic */
 	/* Font weight be 500 */
 	/* Font size as 20 px */
 }
 
 #btn {
+	background-color: transparent;
+	color: black;
+	float: right;
 	/* Transparent background color */
 	/* color should be black */
 }
 
 #btn:hover{
+	background-color: #007bff;
+	color: white;
 	/* Provide background color as #007bff and color as white*/
 }
 
