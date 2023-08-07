@@ -1,0 +1,11 @@
+body{
+    font-size: large;
+    font-weight: bolder;
+}
+.container{
+    background-color: pink;
+}
+.container-fluid{
+    color: white;
+    background-color: blue;
+}

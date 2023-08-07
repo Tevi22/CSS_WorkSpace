@@ -1,0 +1,10 @@
+body{
+	font-size: large;
+	font-weight: bolder;
+}
+.container{
+	background-color: #ffe6ff;
+}
+.container-fluid{
+	background-color: #e6f2ff;
+}
